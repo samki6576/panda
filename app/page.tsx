@@ -1,12 +1,10 @@
 // app/page.tsx
 import Link from 'next/link'
-import { Brand } from "@/components/brand";
 
 export default function Home() {
   return (
     <main className="min-h-screen px-6">
       <header className="mx-auto flex max-w-7xl items-center justify-between py-7">
-        <Brand />
         <Link href="/docs" className="text-sm text-arena-muted transition-colors hover:text-white">Documentation <span aria-hidden="true">↗</span></Link>
       </header>
 
