@@ -1,18 +1,34 @@
 import Link from "next/link";
+import { Brand } from "@/components/brand";
 
 export default function DocsPage() {
   return (
-    <main className="min-h-screen px-6 py-16 sm:px-10">
-      <article className="mx-auto max-w-2xl rounded-2xl border border-arena-border bg-arena-card p-8 sm:p-10">
-        <Link href="/" className="text-sm font-semibold text-violet-300 hover:text-violet-200">← Back to Panta Creator</Link>
-        <p className="mt-10 text-sm font-semibold uppercase tracking-[0.18em] text-violet-300">Getting started</p>
-        <h1 className="mt-3 text-4xl font-bold">Create a prediction market</h1>
-        <ol className="mt-8 space-y-5 text-arena-muted">
-          <li>1. Sign in with an account that has a Solana wallet.</li>
-          <li>2. Write a clear yes-or-no question and select a future resolution date.</li>
-          <li>3. Create the market, then share its identifier with your audience.</li>
+    <main className="min-h-screen px-6 pb-20">
+      <header className="mx-auto flex max-w-7xl items-center justify-between py-7">
+        <Brand />
+        <Link href="/dashboard" className="text-sm text-arena-muted transition-colors hover:text-white">Open creator studio <span aria-hidden="true">→</span></Link>
+      </header>
+      <article className="mx-auto mt-12 max-w-3xl border-t border-arena-border pt-10 sm:mt-20 sm:pt-14">
+        <p className="text-xs font-medium uppercase tracking-[0.18em] text-arena-accent">Documentation / Getting started</p>
+        <h1 className="mt-5 max-w-2xl text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Create a market your community can follow.</h1>
+        <p className="mt-5 max-w-2xl text-base leading-7 text-arena-muted">A few simple steps take you from a sharp question to a shareable prediction market.</p>
+        <ol className="mt-12 divide-y divide-arena-border border-y border-arena-border">
+          {[
+            ["01", "Connect your account", "Sign in with an account linked to a Solana wallet."],
+            ["02", "Write the question", "Use a clear yes-or-no question with an outcome that can be publicly verified."],
+            ["03", "Choose a resolution date", "Set a future date that gives your audience time to participate."],
+            ["04", "Create and share", "Create the market, then add its embed code to your content."],
+          ].map(([number, title, description]) => (
+            <li key={number} className="grid gap-3 py-6 sm:grid-cols-[4rem_1fr] sm:gap-5">
+              <span className="font-mono text-xs text-arena-accent">{number}</span>
+              <div>
+                <h2 className="text-base font-medium">{title}</h2>
+                <p className="mt-2 text-sm leading-6 text-arena-muted">{description}</p>
+              </div>
+            </li>
+          ))}
         </ol>
-        <p className="mt-10 rounded-xl border border-violet-400/20 bg-violet-400/10 p-4 text-sm text-violet-100">Only use publicly verifiable outcomes. Your Panta API key and database connection must be configured on the server before creating markets.</p>
+        <p className="mt-8 rounded-lg border border-arena-border bg-arena-card p-5 text-sm leading-6 text-arena-muted">Only use publicly verifiable outcomes. Your Panta API key and database connection must be configured on the server before creating markets.</p>
       </article>
     </main>
   );

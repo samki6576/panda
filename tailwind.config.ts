@@ -11,18 +11,18 @@ const config: Config = {
     extend: {
       colors: {
         // Colosseum-inspired palette
-        'arena-bg': '#0A0A0A',      // Main background
-        'arena-card': '#161616',    // Card background
-        'arena-border': '#2A2A2A',  // Subtle borders
-        'arena-text': '#FFFFFF',    // Primary text
-        'arena-muted': '#888888',   // Secondary text
-        'arena-accent': '#8B5CF6',  // Purple accent (buttons, links)
+        'arena-bg': '#0A0A0A',
+        'arena-card': '#161616',
+        'arena-border': '#2A2A2A',
+        'arena-text': '#FFFFFF',
+        'arena-muted': '#888888',
+        'arena-accent': '#8B5CF6',
         'arena-accent-hover': '#7C3AED',
-        'arena-green': '#22C55E',   // For "YES" or success states
-        'arena-red': '#EF4444',     // For "NO" or error states
+        'arena-green': '#22C55E',
+        'arena-red': '#EF4444',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'], // Clean, modern font
+        sans: ['Inter', 'Geist Sans', 'system-ui', 'sans-serif'],
       },
     },
   },
