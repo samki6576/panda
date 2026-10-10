@@ -17,22 +17,33 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 export function extractMarketId(response: unknown): string | undefined {
-  function find(value: unknown): string | undefined {
+  function find(value: unknown, allowGenericId = false): string | undefined {
+    if (Array.isArray(value)) {
+      for (const item of value) {
+        const nestedId = find(item, allowGenericId);
+        if (nestedId) return nestedId;
+      }
+      return undefined;
+    }
     if (!isRecord(value)) return undefined;
 
-    const marketId = value.marketId;
-    if (typeof marketId === "string" && marketId.trim()) return marketId.trim();
+    for (const key of ["marketId", "market_id"]) {
+      const marketId = value[key];
+      if (typeof marketId === "string" && marketId.trim()) return marketId.trim();
+    }
 
-    for (const key of ["market", "data", "result"]) {
-      const nestedId = find(value[key]);
+    // Panta may return a market directly, in a standard wrapper, or as an
+    // element in a collection (for example `{ items: [{ marketId }] }`).
+    for (const key of ["market", "markets", "data", "result", "items"]) {
+      const nestedId = find(value[key], allowGenericId || key === "market" || key === "markets");
       if (nestedId) return nestedId;
     }
 
     const id = value.id;
-    return typeof id === "string" && id.trim() ? id.trim() : undefined;
+    return allowGenericId && typeof id === "string" && id.trim() ? id.trim() : undefined;
   }
 
-  return find(response);
+  return find(response, true);
 }
 
 async function pantaFetch(path: string, options: RequestInit = {}) {
