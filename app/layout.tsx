@@ -6,6 +6,11 @@ import { Brand } from '@/components/brand'
 export const metadata = {
   title: 'Panta Creator | Prediction Markets',
   description: 'Embed prediction markets into creator content.',
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({

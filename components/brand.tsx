@@ -5,7 +5,7 @@ export function Brand() {
   return (
     <Link href="/" aria-label="PANDA Creator home" className="inline-flex shrink-0 items-center">
       <Image
-        src="/brand-logo.png"
+        src="/logo.png"
         alt="PANDA"
         width={710}
         height={320}
