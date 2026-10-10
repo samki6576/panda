@@ -15,7 +15,7 @@ connectionUrl.searchParams.delete("sslmode");
 const pool = new Pool({
   connectionString: connectionUrl.toString(),
   ssl: {
-    rejectUnauthorized: process.env.DATABASE_SSL_REJECT_UNAUTHORIZED === "true",
+    rejectUnauthorized: process.env.DATABASE_SSL_REJECT_UNAUTHORIZED !== "false",
   },
 });
 
