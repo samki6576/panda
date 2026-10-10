@@ -3,8 +3,12 @@ export const runtime = "nodejs";
 
 import { NextRequest, NextResponse } from "next/server";
 import { userHasSolanaWallet } from "@/lib/privy";
-import { createMarket, PantaApiError } from "@/lib/panta";
+import { createMarket, extractMarketId, PantaApiError } from "@/lib/panta";
 import { query } from "@/lib/db";
+
+function objectKeys(value: unknown): string[] {
+  return typeof value === "object" && value !== null ? Object.keys(value) : [];
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -30,23 +34,41 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Your creator profile is still syncing. Please try again." }, { status: 409 });
     }
 
-    const market = await createMarket({
+    const pantaResponse = await createMarket({
       question: normalizedQuestion,
       expiry,
       initialLiquidityUsdc: "50000000",
       creatorWallet: creatorWalletAddress,
     });
 
+    const marketId = extractMarketId(pantaResponse);
+    if (!marketId) {
+      const responseObject = pantaResponse && typeof pantaResponse === "object"
+        ? pantaResponse as Record<string, unknown>
+        : undefined;
+      const responseShape = {
+        topLevelKeys: objectKeys(pantaResponse),
+        marketKeys: objectKeys(responseObject?.market),
+        dataKeys: objectKeys(responseObject?.data),
+        resultKeys: objectKeys(responseObject?.result),
+      };
+      console.error("Panta create response did not contain a market ID:", responseShape);
+      return NextResponse.json(
+        { error: "Panta created the market but did not return a recognizable market ID." },
+        { status: 502 }
+      );
+    }
+
     const result = await query(
       `INSERT INTO posts (creator_id, title, market_id, status)
        VALUES ($1, $2, $3, 'draft')
        RETURNING id, market_id`,
-      [creator.rows[0].id, normalizedQuestion, market.marketId]
+      [creator.rows[0].id, normalizedQuestion, marketId]
     );
 
     return NextResponse.json({
       postId: result.rows[0].id,
-      marketId: market.marketId,
+      marketId,
     });
   } catch (error) {
     console.error("Market create error:", error);

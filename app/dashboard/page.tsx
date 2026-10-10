@@ -152,7 +152,7 @@ export default function Dashboard() {
           </div>
         )}
 
-        {market && (
+        {market?.marketId && (
           <div className="mt-6 bg-arena-bg border border-arena-green rounded-lg p-4">
             <p className="text-arena-green font-semibold mb-2">Market Created!</p>
             <p className="text-arena-muted text-sm mb-2">Market ID: {market.marketId}</p>

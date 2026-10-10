@@ -12,6 +12,29 @@ export class PantaApiError extends Error {
   }
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+export function extractMarketId(response: unknown): string | undefined {
+  function find(value: unknown): string | undefined {
+    if (!isRecord(value)) return undefined;
+
+    const marketId = value.marketId;
+    if (typeof marketId === "string" && marketId.trim()) return marketId.trim();
+
+    for (const key of ["market", "data", "result"]) {
+      const nestedId = find(value[key]);
+      if (nestedId) return nestedId;
+    }
+
+    const id = value.id;
+    return typeof id === "string" && id.trim() ? id.trim() : undefined;
+  }
+
+  return find(response);
+}
+
 async function pantaFetch(path: string, options: RequestInit = {}) {
   if (!PANTA_API_BASE_URL || !PANTA_API_KEY) {
     throw new Error("Panta is not configured. Set PANTA_API_BASE_URL and PANTA_API_KEY.");
@@ -21,7 +44,7 @@ async function pantaFetch(path: string, options: RequestInit = {}) {
     ...options,
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${PANTA_API_KEY}`,
+      "X-Api-Key": PANTA_API_KEY,
       ...options.headers,
     },
   });
