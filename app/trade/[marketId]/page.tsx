@@ -3,6 +3,7 @@
 import { usePrivy } from "@privy-io/react-auth";
 import { useParams, useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { Brand } from "@/components/brand";
 
 export default function TradePage() {
   const { ready, authenticated, login } = usePrivy();
@@ -29,6 +30,7 @@ export default function TradePage() {
 
   return (
     <main className="min-h-screen px-6 pb-16">
+      <header className="mx-auto flex max-w-7xl items-center border-b border-arena-border py-6"><Brand /></header>
       <section className="mx-auto mt-12 max-w-lg rounded-lg border border-arena-border bg-arena-card p-6 sm:mt-20 sm:p-8">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-arena-muted">Prediction market</p>
         <p className="mt-3 break-all font-mono text-xs text-arena-muted">{marketId}</p>

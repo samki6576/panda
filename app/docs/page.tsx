@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { Brand } from "@/components/brand";
 
 export default function DocsPage() {
   return (
     <main className="min-h-screen px-6 pb-20">
       <header className="mx-auto flex max-w-7xl items-center justify-between py-7">
+        <Brand />
         <Link href="/dashboard" className="text-sm text-arena-muted transition-colors hover:text-white">Open creator studio <span aria-hidden="true">→</span></Link>
       </header>
       <article className="mx-auto mt-12 max-w-3xl border-t border-arena-border pt-10 sm:mt-20 sm:pt-14">

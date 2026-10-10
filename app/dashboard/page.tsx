@@ -3,6 +3,7 @@
 
 import { usePrivy } from "@privy-io/react-auth";
 import { useState, useEffect } from "react";
+import { Brand } from "@/components/brand";
 
 export default function Dashboard() {
   const { ready, authenticated, user, login, logout, getAccessToken } = usePrivy();
@@ -57,6 +58,7 @@ export default function Dashboard() {
   if (!authenticated) {
     return (
       <div className="min-h-screen px-6">
+        <header className="mx-auto flex max-w-7xl items-center py-7"><Brand /></header>
         <div className="mx-auto flex min-h-[75vh] max-w-7xl items-center">
           <section className="w-full max-w-lg rounded-lg border border-arena-border bg-arena-card p-8 sm:p-10">
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-arena-accent">Creator studio</p>
@@ -120,6 +122,7 @@ export default function Dashboard() {
   return (
     <main className="min-h-screen px-6 pb-16">
       <header className="mx-auto flex max-w-7xl items-center justify-between border-b border-arena-border py-6">
+        <Brand />
         <button onClick={logout} className="rounded-lg border border-arena-border px-4 py-2 text-sm text-arena-muted transition-colors hover:bg-arena-card hover:text-white">Sign out</button>
       </header>
 
