@@ -1,100 +1,98 @@
-
----
+Here's the complete, professional README. I've fixed the broken image placeholder and tightened the language throughout.
 
 ```markdown
 <div align="center">
 
-<img width="1920" height="938" alt="Panta Creator banner" src="https://github.com/user-attachments/assets/d202b785-c958-4c01-a095-6f5ef2bea39d" />
+<img width="1920" height="938" alt="Panta Creator — Turn any post into a prediction market" src="https://github.com/user-attachments/assets/d202b785-c958-4c01-a095-6f5ef2bea39d" />
 
 # Panta Creator
 
-### Turn any post into a prediction market.
+**Embed live prediction markets into any piece of content.**
 
-A creator tool that embeds live prediction markets into blogs, newsletters, and social posts — powered by the [Panta API](https://docs.panta.market/) on Solana.
+A creator tool that turns blogs, newsletters, and social posts into interactive prediction markets — powered by the [Panta API](https://docs.panta.market/) on Solana.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white)](https://panda-six-phi.vercel.app/)
-[![Demo Video](https://img.shields.io/badge/Watch_Demo-EF4444?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/3st4eGfaHdA)
+[![Demo Video](https://img.shields.io/badge/Demo_Video-EF4444?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/3st4eGfaHdA)
 [![Built on Solana](https://img.shields.io/badge/Built_on-Solana-14F195?style=for-the-badge&logo=solana&logoColor=black)](https://solana.com)
 [![Powered by Panta](https://img.shields.io/badge/Powered_by-Panta_API-8B5CF6?style=for-the-badge)](https://panta.market)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
 
-**Built solo for [Colosseum Crypto World's Fair 2026](https://colosseum.com)**
+<sub>Built for <a href="https://colosseum.com">Colosseum Crypto World's Fair 2026</a></sub>
 
 </div>
 
 ---
 
-## 🎯 The Problem
+## Overview
 
-Prediction markets have proven product-market fit — Polymarket processed **over $1B in volume** during the 2024 US election. But they're experienced as **destinations**: to use one, you must visit a site, sign up, fund an account, and browse markets.
+Prediction markets have demonstrated real demand — Polymarket processed over **$1B in volume** during the 2024 US election cycle. Yet adoption remains confined to crypto-native users. The reason is not technical; it is structural. Prediction markets exist as **destinations**, requiring users to visit a separate platform, create an account, and fund a wallet before participating.
 
-Meanwhile, creators are starved for engagement tools beyond likes and comments. They already run informal prediction games — Twitter polls, _"reply with your score prediction,"_ Discord brackets. They do this because engagement matters to their business.
+Meanwhile, content creators actively seek engagement tools beyond likes and comments. They already run informal prediction formats — polls, score predictions, Discord brackets — because engagement directly affects their reach and revenue.
 
-> **What's missing isn't technology. It's distribution.**
+Panta Creator closes this gap. It is a **distribution layer** that embeds prediction markets inside the content audiences already consume.
 
----
-
-## 💡 The Solution
-
-**Panta Creator** lets any creator attach a live prediction market to a post in one click.
-
-A sports blogger writes _"Will Real Madrid win tonight?"_ — their audience trades **YES / NO** directly inside the post. No redirect. No new platform. No crypto learning curve.
-
-| Who | What they get |
-| :-- | :-- |
-| 🎨 **Creators** | A share of trading fees + an interactive format that doesn't exist on Substack, YouTube, or X |
-| 👥 **Audiences** | Skin in the game — without leaving the content they're already reading |
-| 🛰️ **Panta** | A distribution channel that onboards mainstream users on-chain |
-
-> The market is the *context*, not the product.
+> The market is the context, not the product.
 
 ---
 
-## ✨ Features
+## How It Works
 
-| Feature | Description |
-| :-- | :-- |
-| **Email-only onboarding** | Sign in with email — Privy creates an invisible Solana wallet in the background |
-| **One-click market creation** | Enter a question, pick an expiry, click Create. The market deploys on-chain via Panta |
-| **Embeddable widget** | A single `<script>` tag works in Substack, blogs, and any CMS |
-| **Live odds** | Widget displays real-time YES/NO prices from Panta |
-| **Creator fee attribution** | Trades through the embed are attributed back to the creator |
-| **Dark-mode dashboard** | Linear/Vercel-inspired UI built with Tailwind CSS |
-| **Persistent storage** | PostgreSQL tracks every creator, market, and trade |
+1. A creator signs in with email — Privy provisions an embedded Solana wallet in the background.
+2. They define a question and expiry, then deploy the market on-chain via the Panta API.
+3. They receive a single `<script>` tag to embed in any blog, newsletter, or CMS.
+4. Their audience trades YES or NO directly inside the content — no redirect, no wallet setup, no crypto terminology.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <table>
   <tr>
-    <td width="50%">
-      <img src="![Uploading Screenshot (191).png…]()
+    <td width="50%" align="center">
+      <img src="<img width="1890" height="948" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/7742a352-714d-40e7-a07c-4f4c5ad567c8" />
 " alt="Landing page" width="100%" />
-      <p align="center"><b>🏠 Landing page</b></p>
+      <br /><sub><b>Landing page</b></sub>
     </td>
-    <td width="50%">
+    <td width="50%" align="center">
       <img src="https://github.com/user-attachments/assets/39463dfd-40c0-4237-a044-85bed49b19a5" alt="Creator dashboard" width="100%" />
-      <p align="center"><b>📊 Creator dashboard</b></p>
+      <br /><sub><b>Creator dashboard</b></sub>
     </td>
   </tr>
   <tr>
-    <td width="50%">
-      <img src="https://github.com/user-attachments/assets/62de97b0-df76-46a4-8eab-1c621c1f341b" alt="Embeddable widget" width="100%" />
-      <p align="center"><b>🧩 Embeddable widget</b></p>
+    <td width="50%" align="center">
+      <img src="https://github.com/user-attachments/assets/62de97b0-df76-46a4-8eab-1c<img width="1890" height="948" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/cd336256-ae8b-42cd-af8a-a3f185c6f690" />
+621c1f341b" alt="Embeddable widget" width="100%" />
+      <br /><sub><b>Embeddable widget</b></sub>
     </td>
-    <td width="50%">
+    <td width="50%" align="center">
       <img src="https://github.com/user-attachments/assets/314b456a-a692-424c-9d6d-ae126174637d" alt="Widget in context" width="100%" />
-      <p align="center"><b>🎯 Widget in context</b></p>
+      <br /><sub><b>Widget embedded in content</b></sub>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9afde4c3-c816-444c-ac78-d83682263a19" alt="Panta API response" width="80%" />
+  <img src="https://github.com/user-attachments/assets/9afde4c3-c816-444c-ac78-d83682263a19" alt="Panta API integration verified" width="75%" />
+  <br /><sub><b>Panta API integration verified — HTTP 200 from <code>live-api.panta.market</code></b></sub>
 </p>
-<p align="center"><b>✅ Verified Panta API integration — Status 200</b></p>
 
-## 🏗️ Architecture
+---
+
+## Features
+
+| Feature | Description |
+| :-- | :-- |
+| **Email-only onboarding** | Privy provisions an embedded Solana wallet invisibly. No seed phrase, no browser extension. |
+| **One-click market creation** | Define a question and expiry; the market deploys on-chain through the Panta API. |
+| **Embeddable widget** | A single `<script>` tag works in Substack, Ghost, WordPress, and any custom CMS. |
+| **Live pricing** | The widget displays real-time YES/NO prices sourced from Panta. |
+| **Creator fee attribution** | Trades originating from an embed are attributed to the creator through Panta's fee system. |
+| **Custody-safe design** | The server never holds user funds. Every transaction is signed client-side. |
+| **Persistent storage** | PostgreSQL tracks creators, markets, and trades for auditing and analytics. |
+
+---
+
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -124,13 +122,24 @@ A sports blogger writes _"Will Real Madrid win tonight?"_ — their audience tra
                      └────────────────┘
 ```
 
+### Request lifecycle
+
+| Layer | Responsibility |
+| :-- | :-- |
+| **Client** | Renders UI, requests unsigned transactions, signs with the embedded wallet |
+| **API routes** | Verify Privy JWTs, proxy Panta calls, persist metadata to Postgres |
+| **Panta API** | Handles market creation, pricing, transactions, positions, and fee attribution |
+| **Solana** | Settles every market on-chain |
+| **Privy** | Manages auth and embedded wallet infrastructure |
+| **Postgres** | Stores creators, posts, and trade audit records |
+
 ---
 
-## 🔌 Panta API Integration
+## Panta API Integration
 
-Panta handles **all on-chain complexity**. Our app builds the creator experience; Panta is the infrastructure.
+Panta provides the full prediction market infrastructure. This application builds only the creator and audience experience on top of it.
 
-### Creating a market
+### Market creation
 
 ```ts
 const market = await createMarket({
@@ -141,23 +150,23 @@ const market = await createMarket({
 });
 ```
 
-### Trading flow (custody-safe)
+### Trading flow
 
-Panta **never holds user funds**. Every signature comes from the user's own wallet.
+Panta does not custody user funds. Every signature originates from the user's wallet.
 
-1. User clicks **YES** or **NO** in the widget
-2. Our backend asks Panta to build an **unsigned** Solana transaction
-3. The transaction is returned to the client
-4. The user's Privy embedded wallet signs it
-5. The signed transaction is broadcast to Solana
-6. We report the signature back to Panta via `/trades/report`
+1. User selects **YES** or **NO** inside the widget.
+2. The backend requests an unsigned Solana transaction from Panta.
+3. The unsigned transaction is returned to the client.
+4. The user's Privy embedded wallet signs it.
+5. The signed transaction is broadcast to Solana.
+6. The transaction signature is reported back to Panta via `/trades/report`.
 
-### Panta capabilities used
+### Endpoints in use
 
 | Status | Capability |
 | :--: | :-- |
 | ✅ | Market creation |
-| ✅ | Market discovery and data |
+| ✅ | Market discovery and metadata |
 | ✅ | Live price retrieval |
 | ✅ | Building user transactions |
 | ✅ | Reading wallet positions |
@@ -166,7 +175,7 @@ Panta **never holds user funds**. Every signature comes from the user's own wall
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <table>
 <tr>
@@ -174,27 +183,28 @@ Panta **never holds user funds**. Every signature comes from the user's own wall
 
 **Frontend**
 - Next.js 16 (App Router)
-- React 19 + TypeScript
-- Tailwind CSS (custom dark palette)
-- Privy React SDK
+- React 19
+- TypeScript
+- Tailwind CSS
 
 </td>
 <td valign="top" width="33%">
 
 **Backend**
 - Next.js API Routes (Node.js)
-- PostgreSQL on Neon
+- PostgreSQL (Neon serverless)
 - `pg` (node-postgres)
 - `@privy-io/server-auth`
 
 </td>
 <td valign="top" width="33%">
 
-**Integrations**
+**Infrastructure**
 - Panta API
 - Solana
 - Privy
-- Vercel + Neon
+- Vercel
+- Neon
 
 </td>
 </tr>
@@ -202,16 +212,16 @@ Panta **never holds user funds**. Every signature comes from the user's own wall
 
 ---
 
-## 🚀 Quickstart
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js 20+**
-- A [Neon](https://neon.tech) PostgreSQL database _(free tier)_
-- A [Privy](https://dashboard.privy.io) app _(free tier)_
-- A Panta API key — see [Panta docs](https://docs.panta.market)
+- Node.js 20 or later
+- A [Neon](https://neon.tech) PostgreSQL database (free tier)
+- A [Privy](https://dashboard.privy.io) application (free tier)
+- A Panta API key — see the [Panta documentation](https://docs.panta.market)
 
-### 1 · Clone and install
+### Installation
 
 ```bash
 git clone https://github.com/samki6576/panda.git
@@ -219,15 +229,15 @@ cd panda
 npm install
 ```
 
-### 2 · Configure environment
+### Configuration
 
-Create `.env.local` in the project root:
+Create a `.env.local` file in the project root:
 
 ```env
-# Database (Neon connection string)
+# Database
 DATABASE_URL=postgresql://user:pass@host/db?sslmode=require
 
-# Privy — from dashboard.privy.io
+# Privy
 NEXT_PUBLIC_PRIVY_APP_ID=your_privy_app_id
 PRIVY_APP_SECRET=your_privy_app_secret
 
@@ -235,13 +245,13 @@ PRIVY_APP_SECRET=your_privy_app_secret
 PANTA_API_BASE_URL=https://live-api.panta.market/api/v1
 PANTA_API_KEY=pk_test_your_key_here
 
-# Solana RPC
+# Solana
 SOLANA_RPC_URL=https://api.devnet.solana.com
 ```
 
-> ⚠️ **Never commit `.env.local`.** It's already in `.gitignore`.
+> **Note:** `.env.local` is gitignored. Never commit secrets.
 
-### 3 · Initialize the database
+### Database initialization
 
 ```bash
 node scripts/init-db.js
@@ -249,138 +259,135 @@ node scripts/init-db.js
 
 Creates the `creators`, `posts`, and `trades` tables.
 
-### 4 · Run the dev server
+### Running locally
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-### 5 · Verify the integrations
+### Verifying integrations
 
 ```bash
-node scripts/test-db.js      # verify Postgres connection
-node scripts/test-panta.js   # verify Panta API key
+node scripts/test-db.js      # Confirms Postgres connectivity
+node scripts/test-panta.js   # Confirms Panta API key and endpoint
 ```
 
-Both should print `✅ Success` / `Status: 200`.
+Both scripts should return a success status.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 panta-creator-tool/
 ├── app/
 │   ├── page.tsx                    # Landing page
 │   ├── dashboard/page.tsx          # Creator dashboard
-│   ├── trade/[marketId]/page.tsx   # Trade page (opened from widget)
+│   ├── trade/[marketId]/page.tsx   # Trade page
 │   ├── providers.tsx               # Privy provider
 │   └── api/
-│       ├── auth/sync/route.ts      # Creates creator row on login
-│       ├── markets/create/route.ts # Creates a market via Panta
-│       ├── markets/[id]/price/     # Fetches live odds
-│       └── trade/buy/route.ts      # Builds trade transaction
+│       ├── auth/sync/route.ts      # Creator record creation on login
+│       ├── markets/create/route.ts # Market creation via Panta
+│       ├── markets/[id]/price/     # Live price retrieval
+│       └── trade/buy/route.ts      # Trade transaction builder
 ├── lib/
-│   ├── db.ts                       # Postgres pool + query helper
+│   ├── db.ts                       # Postgres pool and query helper
 │   ├── panta.ts                    # Panta API client
 │   └── privy.ts                    # Privy server client
 ├── public/
 │   └── embed.js                    # Embeddable widget script
 ├── scripts/
-│   ├── init-db.js                  # Creates tables
-│   ├── test-db.js                  # Verifies DB connection
-│   └── test-panta.js               # Verifies Panta key
-└── .env.local                      # Your secrets (not committed)
+│   ├── init-db.js                  # Table creation
+│   ├── test-db.js                  # Database connectivity check
+│   └── test-panta.js               # Panta API check
+└── .env.local                      # Secrets (not committed)
 ```
 
 ---
 
-## 🎨 Design Philosophy
+## Design System
 
-The UI is intentionally minimal — **Linear** and **Vercel** inspired.
+The interface follows a minimal, high-contrast aesthetic inspired by Linear and Vercel.
 
 | Token | Value | Usage |
 | :-- | :-- | :-- |
 | Background | `#0A0A0A` | Page canvas |
-| Cards | `#161616` | Surfaces |
-| Borders | `#2A2A2A` | Depth instead of shadows |
-| Accent | `#8B5CF6` | Primary CTAs (used sparingly) |
-| YES | `#22C55E` | Bullish outcomes |
-| NO | `#EF4444` | Bearish outcomes |
-| Font | Inter | Throughout |
+| Surface | `#161616` | Cards and panels |
+| Border | `#2A2A2A` | Section separation |
+| Accent | `#8B5CF6` | Primary actions |
+| Success | `#22C55E` | YES positions |
+| Danger | `#EF4444` | NO positions |
+| Typeface | Inter | All text |
 
-> **No drop shadows.** Depth comes from borders and spacing.
+Depth is achieved through borders and spacing rather than shadows.
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-- [x] Creator login via Privy (email + invisible Solana wallet)
-- [x] Market creation end-to-end via the Panta API
-- [x] Persistent storage of creators, markets, trades
+**Shipped**
+- [x] Creator authentication via Privy
+- [x] End-to-end market creation through the Panta API
+- [x] Persistent storage for creators, markets, and trades
 - [x] Embeddable widget with live odds
+
+**In progress**
 - [ ] Full trade signing flow with Privy Solana hooks
-- [ ] Substack plugin — one-click market embedding
+- [ ] Trade attribution reporting to Panta
+
+**Planned**
+- [ ] Substack plugin for one-click embedding
 - [ ] Streaming payouts to creators as markets resolve
-- [ ] Telegram bot for community managers
-- [ ] Creator analytics: engagement, volume, retention per market
-- [ ] Mainnet launch with Panta's production API
+- [ ] Telegram bot for community-driven market creation
+- [ ] Creator analytics: engagement, volume, retention
+- [ ] Mainnet deployment with Panta's production API
 
 ---
 
-## 🔐 Security
+## Security Model
 
-- 🔑 **No private keys touch the server** — all signing happens in the user's Privy wallet
-- 🛡️ **Panta API key** is stored server-side only (never exposed to the client)
-- 🎫 **Privy JWT** is verified on every authenticated API call
-- 🗄️ **Database credentials** live in `.env.local` (local) and Vercel env vars (production)
-- 🧍 **Creator isolation** — creators can only see and modify their own markets
+- **Server never holds private keys.** All transactions are signed in the user's Privy embedded wallet.
+- **Panta API key is server-side only.** It is never exposed to the client bundle.
+- **Privy JWTs are verified** on every authenticated API request.
+- **Database credentials** live in environment variables, never in source.
+- **Creator isolation** — creators can only view and modify their own markets.
 
 ---
 
-## 🧪 Scripts
+## Scripts
 
-| Command | Purpose |
+| Command | Description |
 | :-- | :-- |
-| `npm run dev` | Start the dev server |
-| `npm run build` | Production build |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build for production |
 | `node scripts/init-db.js` | Create database tables |
-| `node scripts/test-db.js` | Verify Postgres connection |
-| `node scripts/test-panta.js` | Verify Panta API key and endpoint |
+| `node scripts/test-db.js` | Verify Postgres connectivity |
+| `node scripts/test-panta.js` | Verify Panta API access |
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
-- **[Panta](https://panta.market)** — prediction market infrastructure on Solana
-- **[Privy](https://privy.io)** — invisible wallet onboarding
-- **[Neon](https://neon.tech)** — serverless PostgreSQL
-- **[Colosseum](https://colosseum.com)** — Crypto World's Fair 2026
+- [Panta](https://panta.market) — prediction market infrastructure on Solana
+- [Privy](https://privy.io) — authentication and embedded wallets
+- [Neon](https://neon.tech) — serverless PostgreSQL
+- [Colosseum](https://colosseum.com) — Crypto World's Fair 2026
 
 ---
 
-## 📄 License
+## License
 
-MIT
+Released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
-
-**Built solo for [Colosseum Crypto World's Fair 2026](https://colosseum.com)**
-
-*Prediction markets don't need better technology. They need distribution.*
-
-⭐ **If this project resonates, drop a star — it helps more than you think.**
-
+<sub>Built for <a href="https://colosseum.com">Colosseum Crypto World's Fair 2026</a></sub>
 </div>
 ```
 
 ---
 
 
-Then open the GitHub repo in a fresh tab and scroll it top to bottom. It should look clean, professional, and judge-ready.
-
-**Send me a screenshot of the rendered README once it's pushed** and I'll do a final review.
