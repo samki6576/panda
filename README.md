@@ -7,7 +7,7 @@
 
 **Embed live prediction markets into any piece of content.**
 
-A creator tool that turns blogs, newsletters, and social posts into interactive prediction markets — powered by the [Panta API](https://docs.panta.market/) on Solana.
+A creator tool that turns blogs, newsletters, and social posts into interactive prediction markets powered by the [Panta API](https://docs.panta.market/) on Solana.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white)](https://panda-six-phi.vercel.app/)
 [![Demo Video](https://img.shields.io/badge/Demo_Video-EF4444?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/3st4eGfaHdA)
@@ -23,9 +23,9 @@ A creator tool that turns blogs, newsletters, and social posts into interactive 
 
 ## Overview
 
-Prediction markets have demonstrated real demand — Polymarket processed over **$1B in volume** during the 2024 US election cycle. Yet adoption remains confined to crypto-native users. The reason is not technical; it is structural. Prediction markets exist as **destinations**, requiring users to visit a separate platform, create an account, and fund a wallet before participating.
+Prediction markets have demonstrated real demand Polymarket processed over **$1B in volume** during the 2024 US election cycle. Yet adoption remains confined to crypto-native users. The reason is not technical; it is structural. Prediction markets exist as **destinations**, requiring users to visit a separate platform, create an account, and fund a wallet before participating.
 
-Meanwhile, content creators actively seek engagement tools beyond likes and comments. They already run informal prediction formats — polls, score predictions, Discord brackets — because engagement directly affects their reach and revenue.
+Meanwhile, content creators actively seek engagement tools beyond likes and comments. They already run informal prediction formats polls, score predictions, Discord brackets because engagement directly affects their reach and revenue.
 
 Panta Creator closes this gap. It is a **distribution layer** that embeds prediction markets inside the content audiences already consume.
 
@@ -36,10 +36,10 @@ Panta Creator closes this gap. It is a **distribution layer** that embeds predic
 
 ## How It Works
 
-1. A creator signs in with email — Privy provisions an embedded Solana wallet in the background.
+1. A creator signs in with email Privy provisions an embedded Solana wallet in the background.
 2. They define a question and expiry, then deploy the market on-chain via the Panta API.
 3. They receive a single `<script>` tag to embed in any blog, newsletter, or CMS.
-4. Their audience trades YES or NO directly inside the content — no redirect, no wallet setup, no crypto terminology.
+4. Their audience trades YES or NO directly inside the content no redirect, no wallet setup, no crypto terminology.
 
 ---
 <img width="1920" height="938" alt="Screenshot (193)" src="https://github.com/user-attachments/assets/9e734a3f-6e32-41b9-a661-902489ce82f0" />
@@ -192,7 +192,7 @@ Panta does not custody user funds. Every signature originates from the user's wa
 - Node.js 20 or later
 - A [Neon](https://neon.tech) PostgreSQL database (free tier)
 - A [Privy](https://dashboard.privy.io) application (free tier)
-- A Panta API key — see the [Panta documentation](https://docs.panta.market)
+- A Panta API key see the [Panta documentation](https://docs.panta.market)
 
 ### Installation
 
@@ -325,7 +325,7 @@ Depth is achieved through borders and spacing rather than shadows.
 - **Panta API key is server-side only.** It is never exposed to the client bundle.
 - **Privy JWTs are verified** on every authenticated API request.
 - **Database credentials** live in environment variables, never in source.
-- **Creator isolation** — creators can only view and modify their own markets.
+- **Creator isolation** creators can only view and modify their own markets.
 
 ---
 
@@ -343,10 +343,10 @@ Depth is achieved through borders and spacing rather than shadows.
 
 ## Acknowledgements
 
-- [Panta](https://panta.market) — prediction market infrastructure on Solana
-- [Privy](https://privy.io) — authentication and embedded wallets
-- [Neon](https://neon.tech) — serverless PostgreSQL
-- [Colosseum](https://colosseum.com) — Crypto World's Fair 2026
+- [Panta](https://panta.market) prediction market infrastructure on Solana
+- [Privy](https://privy.io) authentication and embedded wallets
+- [Neon](https://neon.tech) serverless PostgreSQL
+- [Colosseum](https://colosseum.com) Crypto World's Fair 2026
 
 ---
 
