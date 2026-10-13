@@ -1,7 +1,10 @@
+
+---
+
 ```markdown
 <div align="center">
 
-<img width="1920" height="938" alt="Panta Creator" src="https://github.com/user-attachments/assets/d202b785-c958-4c01-a095-6f5ef2bea39d" />
+<img width="1920" height="938" alt="Panta Creator banner" src="https://github.com/user-attachments/assets/d202b785-c958-4c01-a095-6f5ef2bea39d" />
 
 # Panta Creator
 
@@ -364,3 +367,7 @@ MIT
 
 ---
 
+
+Then open the GitHub repo in a fresh tab and scroll it top to bottom. It should look clean, professional, and judge-ready.
+
+**Send me a screenshot of the rendered README once it's pushed** and I'll do a final review.
