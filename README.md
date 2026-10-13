@@ -65,21 +65,33 @@ A sports blogger writes _"Will Real Madrid win tonight?"_ — their audience tra
 
 ## 📸 Screenshots
 
-### 🏠 Landing page
-![Landing page](https://github.com/user-attachments/assets/1fd65a78-64d0-43b8-8fbf-52378dc62fb0)
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/1fd65a78-64d0-43b8-8fbf-52378dc62fb0" alt="Landing page" width="100%" />
+      <p align="center"><b>🏠 Landing page</b></p>
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/39463dfd-40c0-4237-a044-85bed49b19a5" alt="Creator dashboard" width="100%" />
+      <p align="center"><b>📊 Creator dashboard</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/62de97b0-df76-46a4-8eab-1c621c1f341b" alt="Embeddable widget" width="100%" />
+      <p align="center"><b>🧩 Embeddable widget</b></p>
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/314b456a-a692-424c-9d6d-ae126174637d" alt="Widget in context" width="100%" />
+      <p align="center"><b>🎯 Widget in context</b></p>
+    </td>
+  </tr>
+</table>
 
-### 📊 Creator dashboard
-![Creator dashboard](https://github.com/user-attachments/assets/39463dfd-40c0-4237-a044-85bed49b19a5)
-
-### 🧩 Embeddable widget
-![Embeddable widget](https://github.com/user-attachments/assets/62de97b0-df76-46a4-8eab-1c621c1f341b)
-
-![Widget detail](https://github.com/user-attachments/assets/314b456a-a692-424c-9d6d-ae126174637d)
-
-### ✅ Verified Panta API integration
-![Panta API response](https://github.com/user-attachments/assets/9afde4c3-c816-444c-ac78-d83682263a19)
-
----
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9afde4c3-c816-444c-ac78-d83682263a19" alt="Panta API response" width="80%" />
+</p>
+<p align="center"><b>✅ Verified Panta API integration — Status 200</b></p>
 
 ## 🏗️ Architecture
 
