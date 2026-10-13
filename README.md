@@ -39,6 +39,7 @@ Panta Creator closes this gap. It is a **distribution layer** that embeds predic
 
 ---
 
+
 ## How It Works
 
 1. A creator signs in with email — Privy provisions an embedded Solana wallet in the background.
@@ -67,6 +68,7 @@ Panta Creator closes this gap. It is a **distribution layer** that embeds predic
 ## Architecture
 
 ```
+<img width="1920" height="938" alt="Screenshot (192)" src="https://github.com/user-attachments/assets/be52de7d-afa0-4529-81f9-b08fa6e5c0c8" />
 ┌──────────────────────────────────────────────────────────────┐
 │                       CLIENT LAYER                           │
 │  ┌───────────────┐   ┌──────────────┐   ┌─────────────────┐  │
@@ -121,6 +123,7 @@ const market = await createMarket({
   creatorWallet: userSolanaAddress,
 });
 ```
+<img width="1920" height="938" alt="Screenshot (193)" src="https://github.com/user-attachments/assets/066df9ef-743e-4acd-bbca-dbc754c9c677" />
 
 ### Trading flow
 
@@ -146,6 +149,8 @@ Panta does not custody user funds. Every signature originates from the user's wa
 | 🔄 | Trade attribution *(in progress)* |
 
 ---
+<img width="1920" height="1080" alt="Screenshot (188)" src="https://github.com/user-attachments/assets/74729791-1723-4adf-91c5-2673e0f6d6f8" />
+<img width="1833" height="957" alt="Screenshot (189)" src="https://github.com/user-attachments/assets/dbf32c27-61a7-4c54-afef-22025b4470b2" />
 
 ## Tech Stack
 
