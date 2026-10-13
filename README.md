@@ -1,4 +1,4 @@
-Here's the complete, professional README. I've fixed the broken image placeholder and tightened the language throughout.
+
 <img width="1890" height="948" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/c10b1e30-c26c-4dfa-a3e6-805018d5e9c6" />
 
 
