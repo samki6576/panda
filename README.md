@@ -42,6 +42,7 @@ Panta Creator closes this gap. It is a **distribution layer** that embeds predic
 4. Their audience trades YES or NO directly inside the content — no redirect, no wallet setup, no crypto terminology.
 
 ---
+<img width="1920" height="938" alt="Screenshot (193)" src="https://github.com/user-attachments/assets/9e734a3f-6e32-41b9-a661-902489ce82f0" />
 
 
 
@@ -102,6 +103,7 @@ Panta Creator closes this gap. It is a **distribution layer** that embeds predic
 | **Postgres** | Stores creators, posts, and trade audit records |
 
 ---
+<img width="1920" height="947" alt="Screenshot (194)" src="https://github.com/user-attachments/assets/6e8d01a6-e533-4f7d-8e90-e67caee71240" />
 
 ## Panta API Integration
 
