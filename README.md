@@ -68,7 +68,8 @@ A sports blogger writes _"Will Real Madrid win tonight?"_ — their audience tra
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github.com/user-attachments/assets/1fd65a78-64d0-43b8-8fbf-52378dc62fb0" alt="Landing page" width="100%" />
+      <img src="![Uploading Screenshot (191).png…]()
+" alt="Landing page" width="100%" />
       <p align="center"><b>🏠 Landing page</b></p>
     </td>
     <td width="50%">
