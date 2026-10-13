@@ -44,39 +44,7 @@ Panta Creator closes this gap. It is a **distribution layer** that embeds predic
 
 ---
 
-## Screenshots
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <img src="<img width="1890" height="948" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/7742a352-714d-40e7-a07c-4f4c5ad567c8" />
-" alt="Landing page" width="100%" />
-      <br /><sub><b>Landing page</b></sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github.com/user-attachments/assets/39463dfd-40c0-4237-a044-85bed49b19a5" alt="Creator dashboard" width="100%" />
-      <br /><sub><b>Creator dashboard</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github.com/user-attachments/assets/62de97b0-df76-46a4-8eab-1c<img width="1890" height="948" alt="Screenshot (191)" src="https://github.com/user-attachments/assets/cd336256-ae8b-42cd-af8a-a3f185c6f690" />
-621c1f341b" alt="Embeddable widget" width="100%" />
-      <br /><sub><b>Embeddable widget</b></sub>
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github.com/user-attachments/assets/314b456a-a692-424c-9d6d-ae126174637d" alt="Widget in context" width="100%" />
-      <br /><sub><b>Widget embedded in content</b></sub>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/9afde4c3-c816-444c-ac78-d83682263a19" alt="Panta API integration verified" width="75%" />
-  <br /><sub><b>Panta API integration verified — HTTP 200 from <code>live-api.panta.market</code></b></sub>
-</p>
-
----
 
 ## Features
 
