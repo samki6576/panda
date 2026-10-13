@@ -3,11 +3,6 @@
 
 
 
-
-<div align="center">
-
-<img width="1920" height="938" alt="Panta Creator — Turn any post into a prediction market" src="https://github.com/user-attachments/assets/d202b785-c958-4c01-a095-6f5ef2bea39d" />
-
 # Panta Creator
 
 **Embed live prediction markets into any piece of content.**
